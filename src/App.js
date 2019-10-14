@@ -6,35 +6,34 @@ import cards from "../src/cards.json";
 import "./App.css";
 
 
-
 function App () {
 
 const [cardState, setCardState] = useState(cards); 
 const [scoreState, setScoreState] = useState(0);
 const [highScoreState, setHighScoreState] = useState(0);
-const [answerState, setAnswerState] = useState("Click an Image to Start!")
+const [answerState, setAnswerState] = useState("Click an image to start!")
 
 function clickCount(id) {
     return cardState.find((o, i) => {
       if (o.id === id) {
-        if(cards[i].count === 0){
+        if (cards[i].count === 0) {
           cards[i].count = cards[i].count + 1;
           setScoreState(scoreState + 1)
-          setAnswerState("You guessed correctly")
+          setAnswerState("You guessed correctly!")
           setCardState(cardState.sort(() => Math.random() - 0.5))
         } else {
           if (scoreState > highScoreState) {
           setHighScoreState(scoreState)
-          setAnswerState("You win!")
-
+          setAnswerState("You guessed incorrectly!")
           }
           cardState.forEach(card => {
-            card.count = 0;
+          card.count = 0;
           });
           alert(`Game Over :( \nscore: ${scoreState}`);
           setScoreState(0)
+          setCardState(cardState.sort(() => Math.random() - 0.5))
         }
-
+        return true;
       }
     });
   }
@@ -46,7 +45,7 @@ function clickCount(id) {
           <Card
             clickCount={clickCount}
             id={card.id}
-            key={card.id}
+            key={card.key}
             image={card.image}
           /> 
         ))}
@@ -54,7 +53,6 @@ function clickCount(id) {
     );
   
 }
-
 
 export default App;
 
