@@ -45,7 +45,7 @@ function clickCount(id) {
           <Card
             clickCount={clickCount}
             id={card.id}
-            key={card.key}
+            key={card.id}
             image={card.image}
           /> 
         ))}

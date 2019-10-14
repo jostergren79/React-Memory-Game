@@ -1,23 +1,58 @@
-.header {
-    width: 100%;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 2px;
-    padding-right: 2px;
-    float: left;
-    color: white;
+.navbar {
     align-content: center;
+    min-height: 70px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar li {
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.3%;
+    display: inline-block;
 
 }
 
-.navbar {
+.header {
+    align-content: center;
+}
+
+.header h1 h2{
+
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    min-height: 70px;
+    position: fixed;
     width: 100%;
-    padding-top: 2px;
-    padding-bottom: 2px;
+}
+
+h1,h2 {
+
+    color: white;
     padding-left: 2px;
     padding-right: 2px;
-    float: left;
-    color: white;
-    align-content: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
 
+}
+
+li {
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.3%;
+    float: left;
+}
+
+.brand {
+    font-size: large;
+    align-content: center;
 }
