@@ -14,6 +14,7 @@ const [highScoreState, setHighScoreState] = useState(0);
 const [answerState, setAnswerState] = useState("Click an image to start!")
 
 function clickCount(id) {
+  // eslint-disable-next-line
     return cardState.find((o, i) => {
       if (o.id === id) {
         if (cards[i].count === 0) {
@@ -30,6 +31,7 @@ function clickCount(id) {
           card.count = 0;
           });
           alert(`Game Over :( \nscore: ${scoreState}`);
+          // eslint-disable-next-line
           setScoreState(0)
           setCardState(cardState.sort(() => Math.random() - 0.5))
         }

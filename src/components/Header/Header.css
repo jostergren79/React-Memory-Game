@@ -1,19 +1,20 @@
 .navbar {
+    background: black;
     align-content: center;
     min-height: 70px;
     position: fixed;
-    width: 100%;
 }
 
 .navbar li {
+    align-content: center;
+    text-align: center;
+    background: black;
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px;
-    width: 33.3%;
     display: inline-block;
-
 }
 
 .header {
@@ -21,24 +22,24 @@
 }
 
 .header h1 h2{
-
+    text-align: center;
+    background: black;
     color: white;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px;
     min-height: 70px;
-    position: fixed;
-    width: 100%;
 }
 
 h1,h2 {
-
+    text-align: center;
+    background: black;
     color: white;
     padding-left: 2px;
     padding-right: 2px;
     padding-top: 2px;
-    padding-bottom: 2px;
+    padding-bottom: 10px;
 
 }
 
@@ -48,11 +49,12 @@ li {
     padding-bottom: 5px;
     padding-left: 5px;
     padding-right: 5px;
-    width: 33.3%;
     float: left;
 }
 
 .brand {
+    text-align: center;
+    background: black;
     font-size: large;
-    align-content: center;
+   
 }
