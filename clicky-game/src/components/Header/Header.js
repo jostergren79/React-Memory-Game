@@ -2,26 +2,32 @@ import React from "react";
 import "./Header.css";
 
 const Header = props => (
-  // <div className="header">
-  //   <div className="title">{props.children}</div>
-  //   <div className="scores">
-  //     Score: {props.score} Highscore: {props.highscore}
-  //   </div>
-  // </div>
 
 
 
+<div>
+  <nav class="navbar">
+    <ul>
+      <li class="brand">
+        <a href="/">Clicky Game</a>
+        </li>
+        <li class="">You guessed correctly!</li>
+        <li>Score: {props.score} | High Score: {props.highscore}</li>
+        </ul>
+        </nav>
 
-<nav class="navbar" className="header">
-  <ul>
-    <li class="brand" className="title"><a href="/">{props.children}</a></li>
-    <li class="scores">You guessed incorrectly!</li>
-    <li class="scores">You guessed correctly!</li>
+        <header class="header">
+          <h1>Clicky Game!</h1>
+          <h2>Click on an image to earn points, but don't click on any more than once!</h2>
+          </header>
 
-    <li>Score: {props.score} | Top Score: {props.highscore} </li>
-    </ul>
-</nav>
+</div>
 
 );
+
+          
+         
+
+
 
 export default Header;

@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import cards from "../src/cards.json";
 import "./App.css";
 
-
 class App extends Component {
   state = {
     cards,
@@ -55,12 +54,14 @@ class App extends Component {
             id={card.id}
             key={card.id}
             image={card.image}
-          />
+          /> 
         ))}
       </Wrapper>
     );
   }
 }
+
+
 
 export default App;
 

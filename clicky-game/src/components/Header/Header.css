@@ -1,3 +1,5 @@
-.Header {
-background-color: indigo;
+header {
+    background-color: rebeccapurple;
+    color: white;
+    padding: auto;
 }
