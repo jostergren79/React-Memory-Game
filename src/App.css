@@ -1,12 +1,23 @@
-
-.footer {
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 80%; 
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center; 
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 100%;
-  color: white;
-  align-content: center;
-  position: sticky;
-  padding-top: 2p;
-  padding-bottom: 2px;
-  padding-right: 2px;
-  padding-left: 2px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
