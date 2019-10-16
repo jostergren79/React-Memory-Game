@@ -3,31 +3,23 @@ import "./Header.css";
 
 const Header = props => (
 
+<div id="root">
+<nav className="navbar">
 
+  <ul>
+    <li className="brand"><a href="/">Clicky Game</a></li>
+    <li className="answers">{props.answer}</li>
+    <li> Score: {props.score}</li> 
+    <li> High Score: {props.highscore}</li>
+  </ul>
 
-<div class="container">
-  <nav class="navbar">
-    <ul>
-      <li class="brand">
-        <a href="/">Clicky Game</a>
-        </li>
-        <li class="answers">{props.answer}</li>
-        <li>Score: {props.score} | High Score: {props.highscore}</li>
-        </ul>
-        </nav>
+</nav>
 
-        <header class="header">
-          <h1>Clicky Game!</h1>
-          <h2>Click on an image to earn points, but don't click on any more than once!</h2>
-          </header>
-
-</div>
-
+<header className="header">
+  <h2>Click on an image to earn points, but don't click on any more than once!</h2>
+  </header>
+  </div>
 );
 
-          
-         
-
-
-
 export default Header;
+
