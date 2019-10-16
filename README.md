@@ -16,6 +16,6 @@
 
 - Jason Ostergren
 
-#### GitHub deployment
+#### Heroku deployment link
 
-- https://github.com/jostergren79/reactproject
+- https://bcclickygamereact.herokuapp.com/
