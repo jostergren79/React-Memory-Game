@@ -1,5 +1,3 @@
-## Coding BootCamp React Project I
-
 - This a React application that demonstrates utilization of components.
 
 #### Functionality / How to play
