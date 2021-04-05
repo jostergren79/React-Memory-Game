@@ -1,4 +1,4 @@
-- This a React application that demonstrates utilization of React components and the use of State and Hooks. 
+- This a React application that demonstrates utilization of React components. 
 
 #### Functionality / How to play
 
